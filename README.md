@@ -2,7 +2,8 @@
 
 This project involves the design and VHDL implementation of a two-dimensional Convolutional Network (CN), developed for the *Electronics & Communication Systems* course at the University of Pisa (Academic Year 2025/2026).
 
-**Authors:** Francesco Rossi Paccani, Samuel Scarabelli
+**Authors:** * Samuel Scarabelli
+* [Francesco Rossi Paccani](https://github.com/FrancescoRossiPaccani)
 
 ## 🎯 Project Objective
 The system performs a convolution operation between an input matrix and a filter. The design was developed using a bottom-up approach and can handle 8-bit serial inputs, ensuring correct processing even under partial data-loading conditions.
