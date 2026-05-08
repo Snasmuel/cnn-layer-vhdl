@@ -11,7 +11,7 @@ The system performs a convolution operation between an input matrix and a filter
 The project includes two different RTL implementations:
 
 1. **Original Version:** Utilizes a pure combinational approach for processing, leveraging a chain of Ripple Carry Adders (RCA) and parallel multiplexers. It generates a new output element every clock cycle ([`Conv_2d.vhdl`](./src/Conv_2d.vhdl)).
-2. **Optimized Version:** Designed to reduce the critical path and maximize the clock frequency. It replaces the RCA chain with a specialized synchronous counter (`COUNTER_OPT`) and the multiplexers with a shift register. The data flow is managed by a Finite State Machine (FSM), making the system highly scalable as the matrix (N) and filter (M) dimensions increase ([`Conv_2d_opt.vhdl`](./src/Conv_2d_opt.vhdl)).
+2. **Optimized Version:** Designed to reduce the critical path and maximize the clock frequency. It replaces the RCA chain with a specialized synchronous counter (`COUNTER_OPT`) and the multiplexers with a shift register. The data flow is managed by a Finite State Machine (FSM), making the system highly scalable as the matrix (N) and filter (M) dimensions increase ([`Conv_2d_opt.vhdl`](./src/Conv_2d _opt.vhdl)).
 
 ## 🧪 Validation and Testing
 The design was rigorously verified using **ModelSim**, achieving **100% code coverage**.
